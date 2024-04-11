@@ -8,47 +8,48 @@
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #222831; /* Main background color */
     margin: 0;
     padding: 0;
+    color: #eeeeee; /* Default text color */
 }
 
 /* Header styles */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #31363f; /* Header background color */
+    color: #eeeeee; /* Header text color */
     padding: 20px;
     text-align: center;
 }
 
 /* Navigation styles */
 nav {
-    background-color: #666;
+    background-color: #76aba9; /* Navigation background color */
     padding: 10px;
     text-align: center;
 }
 
 nav a {
-    color: #fff;
+    color: #eeeeee; /* Navigation link text color */
     text-decoration: none;
     padding: 10px 20px;
 }
 
 nav a:hover {
-    background-color: #999;
+    background-color: #31363f; /* Navigation link hover background color */
 }
 
 /* Section styles */
 section {
     padding: 20px;
     margin: 20px;
-    background-color: #fff;
+    background-color: #31363f; /* Section background color */
 }
 
 /* Footer styles */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #31363f; /* Footer background color */
+    color: #eeeeee; /* Footer text color */
     text-align: center;
     padding: 20px;
     position: fixed;
