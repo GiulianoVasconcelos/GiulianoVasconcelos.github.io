@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome CDN -->
 
 <head>
     <meta charset="UTF-8">
@@ -11,15 +16,33 @@
     
 </head>
 <body>
-    <header>
-        <h1>Giuliano Vasconcelos</h1>
-    </header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+        <div class="logo">
+            <a href="#">Giuliano Vasconcelos</a>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
+
+    <section id="Home">
+        <h2>About Me</h2>
+       <p> 
+            Hello and welcome to my personal portfolio. My name is Giuliano Vasconcelos, 
+            and I possess a Bachelor’s degree in Electrical Engineering. I have experience 
+            working as a Procurement Analyst for the leading oil company in Brazil. I also 
+            played a role at the largest mining company in Brazil during the critical period 
+            of the Brumadinho Accident. Following this, I transitioned into the field of Data 
+            Science and development, where I had the opportunity to work with Ford Company.
+        </p>
+    </section>
     
     <footer>
         &copy; 2024 GiulianoVasconcelos.github.io

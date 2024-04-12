@@ -3,25 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+    <title>GiulianoVasconcelos.github.io</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome CDN -->
 </head>
 <body>
-    <header>
-        <h1>My Projects</h1>
-    </header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about">About Me</a>
-        <a href="portfolio">Portfolio</a>
-        <a href="contact">Contact</a>
+        <div class="logo">
+            <a href="#">Giuliano Vasconcelos</a>
+        </div>
+        <!--<input type="checkbox" id="menu-toggle"> -->
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
+
     <section id="about">
-        <h2>About Me</h2>
+        <h2>Projects</h2>
         <p>Welcome to my projects page! Here you can explore some of the projects I've worked on.</p>
     </section>
+
     <section id="portfolio">
-        <h2>Projects</h2>
+        
         <div class="project">
             <h3>Webscrapping</h3>
             <p>The goal of this project is to use a webscrapper to find the most suitable laptop for a data science student.</p>
@@ -29,8 +38,15 @@
         </div>
         
     </section>
+        
+        
+        
+    </div>
+
+
     <footer>
         &copy; 2024 GiulianoVasconcelos.github.io
     </footer>
+
 </body>
 </html>

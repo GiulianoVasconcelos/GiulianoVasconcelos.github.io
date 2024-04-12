@@ -1,32 +1,17 @@
-/* Reset styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #222831; /* Main background color */
     margin: 0;
     padding: 0;
-    color: #eeeeee; /* Default text color */
+    font-family: Arial, sans-serif;
+    background-color: #222;
 }
 
-/* Header styles */
-header {
-    background-color: #31363f; /* Header background color */
-    color: #eeeeee; /* Header text color */
-    padding: 20px;
-    text-align: center;
-}
-
-/* Navigation styles */
 nav {
-    background-color: #76aba9; /* Navigation background color */
-    padding: 10px;
-    text-align: center;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav a {
@@ -39,12 +24,17 @@ nav a:hover {
     background-color: #31363f; /* Navigation link hover background color */
 }
 
+
 /* Section styles */
 section {
     padding: 20px;
     margin: 20px;
     background-color: #31363f; /* Section background color */
+    color: #eeeeee; /* Footer text color */
+
 }
+
+
 
 /* Footer styles */
 footer {
@@ -55,4 +45,90 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+
+/* unvisited link */
+a:link {
+  color: #fff;
+  
+}
+
+/* visited link */
+a:visited {
+  color: #eeeeee;
+}
+
+/* mouse over link */
+a:hover {
+  color: 222831;
+}
+
+/* selected link */
+a:active {
+  color: 222831;
+}
+
+
+
+.logo {
+    flex: 1;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-icon {
+    display: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #menu-toggle:checked + .menu {
+        display: flex;
+    }
 }
