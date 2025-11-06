@@ -1,0 +1,71 @@
+
+:root{
+  --bg:#181b2a;
+  --card:#1c2232;
+  --muted:#aeb5c9;
+  --accent:#5a6bff;
+  --light:#f5f7fb;
+  --gray:#5b5b5b;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:var(--light); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
+.container{max-width:1100px; margin:0 auto; padding:0 20px;}
+.topbar{position:sticky; top:0; z-index:40; backdrop-filter: blur(8px); background:rgba(24,27,42,0.92); border-bottom:1px solid rgba(255,255,255,0.06)}
+.header-inner{display:flex; align-items:center; justify-content:space-between;}
+.brand{display:flex; gap:12px; align-items:center}
+.brand-text h1{font-size:16px; margin:0; font-weight:700; letter-spacing:0.2px}
+.tag{margin:0; font-size:11px; color:rgba(255,255,255,0.8); margin-top:2px}
+.nav a{color:rgba(255,255,255,0.92); text-decoration:none; margin-left:16px; font-size:14px}
+.hero{padding:48px 0;}
+.hero-inner{display:grid; grid-template-columns:1fr 420px; gap:28px; align-items:center;}
+.hero-copy h2{font-size:36px; margin:0 0 8px 0; line-height:1.02}
+.hero-copy p{color:rgba(255,255,255,0.85); margin:0 0 18px 0; font-size:16px}
+.cta-group{display:flex; gap:12px; margin-top:6px}
+.btn{display:inline-block; padding:12px 18px; border-radius:999px; text-decoration:none; font-weight:600; font-size:14px}
+.btn.primary{background:var(--light); color:var(--bg); border:0}
+.btn.ghost{border:1px solid rgba(255,255,255,0.12); color:rgba(255,255,255,0.92); background:transparent}
+.domain{margin-top:12px; font-size:13px; color:var(--muted)}
+
+/* player mock */
+.player-mock{border-radius:12px; background:linear-gradient(180deg,#0b0f1d, #131726); padding:14px; border:1px solid rgba(255,255,255,0.04); box-shadow:0 10px 30px rgba(10,14,30,0.6)}
+.player-top{height:10px; display:flex; gap:6px; align-items:center}
+.player-top span{display:inline-block; width:10px; height:10px; border-radius:6px}
+.player-body{display:flex; gap:12px; padding-top:12px; align-items:center}
+.player-left{flex:1}
+.line{height:12px; background:rgba(255,255,255,0.06); margin-bottom:10px; border-radius:6px}
+.line.title{height:16px; width:70%}
+.line.short{width:60%}
+.line.shorter{width:35%}
+.player-thumb{width:140px; height:90px; border-radius:10px; background:linear-gradient(135deg,#243042,#2b3b5a); box-shadow:inset 0 -10px 30px rgba(0,0,0,0.2)}
+
+/* sections */
+.section{padding:36px 0}
+.muted{color:var(--muted)}
+.grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+.card{background:var(--card); padding:18px; border-radius:12px; border:1px solid rgba(255,255,255,0.03)}
+.video-grid .thumb{height:160px; border-radius:8px; background:linear-gradient(180deg,#111827,#0b1220)}
+.quote{padding:18px; border-radius:12px; background:var(--card); border:1px solid rgba(255,255,255,0.03); color:var(--light)}
+
+/* newsletter */
+.newsletter-card{display:flex; gap:20px; align-items:center; justify-content:space-between; padding:18px; border-radius:12px; background:var(--card); border:1px solid rgba(255,255,255,0.03)}
+.subscribe-form{display:flex; gap:10px}
+.subscribe-form input{padding:12px 14px; border-radius:10px; border:1px solid rgba(255,255,255,0.06); background:rgba(255,255,255,0.02); color:var(--light); min-width:240px}
+
+/* about */
+.about-grid{display:grid; grid-template-columns:360px 1fr; gap:20px; align-items:center}
+.about-image{height:220px; border-radius:12px; background:linear-gradient(135deg,#243042,#2b3b5a)}
+
+/* footer */
+.footer{border-top:1px solid rgba(255,255,255,0.06); padding:28px 0; margin-top:40px}
+.footer-inner{display:flex; align-items:center; justify-content:space-between; gap:20px}
+.brand-small{display:flex; align-items:center; gap:12px}
+.brand-copy{color:var(--muted); font-size:13px}
+.footer-nav a{color:var(--muted); margin-left:14px; text-decoration:none; font-size:13px}
+
+/* responsive */
+@media (max-width:900px){
+  .hero-inner{grid-template-columns:1fr}
+  .grid-3{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:1fr}
+  .nav{display:none}
+}
